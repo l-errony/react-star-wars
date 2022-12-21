@@ -1,0 +1,21 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #9c9c9c;
+    --color-light-gray: #dfe2df;
+    --color-light-blue: #6a83fb;
+
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-family-main: sans-serif;
+    --font-bold: 600;
+
+    --transition: .4s
+}
+*, *:after, *:before{
+    /*чтоб padding входил в высоту и ширину*/
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}

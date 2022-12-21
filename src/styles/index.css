@@ -1,0 +1,118 @@
+:root{
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark-grey: #10100e;
+  --color-yelow: #ffff00;
+  --color-red: #f75d83;
+
+  --color-blue: #521180;
+  --color-violet: #ae72c2;
+
+  --spacing-ultra-small: 5px;
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 30px;
+
+  --transition: .4s;
+  --font-family-main: sans-serif;
+  --font-bold: 600;
+
+  --font-size-main: 16px;
+  --font-size-subheader: 18px;
+  --font-size-header: 26px;
+
+  --margin-list: 7px;
+
+  --width-max: 1200px;
+
+  --border-radius-small: 3px;
+  --border-radius-medium: 5px;
+
+  --text-shadow-yellow:
+      0 0 2px var(--color-white),
+      0 0 40px var(--color-yelow);
+
+  --text-shadow-blue:
+          0 0 2px var(--color-white),
+          0 0 40px var(--color-blue);
+
+  --box-shadow-white:
+          0 16px 24px 2px rgba(225, 225, 225, 0.02),
+          0 6px 30px 5px rgba(225, 225, 225, 0.04),
+          0 8px 10px -5px rgba(225, 225, 225, 0.1);
+
+  --box-shadow-black:
+      0 16px 24px 2px rgba(0, 0, 0, 0.5),
+      0 6px 30px 5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+  /*THEMES*/
+  --theme-light-header:   #dfe2df;
+  --theme-dark-header:    #ca6c6f;
+  --theme-neitral-header: #cccc46;
+  --theme-default-header: var(--theme-neitral-header);
+
+  /*BACKGROUND*/
+
+  --theme-light-bgimage:   linear-gradient(to right bottom, #051937, #162454, #312d70, #533389, #7a359f);
+  --theme-dark-bgimage:    linear-gradient(to right bottom, #000000, #160b11, #20141e, #281b2e, #2b2440);
+  --theme-neitral-bgimage: url(@static/bg.jpg);
+  --theme-default-bgimage: var(--theme-neitral-bgimage);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
+  background-color: var(--color-dark-grey);
+  background-image: var(--theme-default-bgimage);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+}
+
+.img{
+  display: block;
+}
+
+.header__text {
+  line-height: 1.7;
+  font-size: var(--font-size-header);
+  text-shadow: 0 0 2px var(--color-black);
+  color: var(--theme-default-header);
+  transition: color var(--transition);
+}
+*, *:after, *:before{
+  /*чтоб padding входил в высоту и ширину*/
+  box-sizing: border-box;
+}
+
+/******************************
+SCROLL
+******************************/
+/* Firefox */
+* {
+  scrollbar-color: rgb(37, 56, 97) rgba(0, 0, 0, .7);
+  scrollbar-width: thin;
+}
+
+/* Chrome */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+/*сам скролл*/
+::-webkit-scrollbar-thumb {
+  background-color: rgba(37, 56, 97);
+  border-radius: 2px;
+}
+/*фон*/
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/*точка*/
+::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.7);
+}
