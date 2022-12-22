@@ -1,1 +1,0 @@
-export {defaullt} from "./Header"
