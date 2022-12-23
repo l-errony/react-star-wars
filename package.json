@@ -24,10 +24,12 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
+    "deploy": "npm run build && npm run build-gh-pages",
     "build": "react-app-rewired build",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "npm start": "build-storybook -s public"
+    "npm start": "build-storybook -s public",
+    "build-gh-pages": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
